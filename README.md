@@ -270,8 +270,9 @@ Büyük bir arazi içerisinde bulunan tarlaların sulanmasında kullanılacak su
        int dizi[harfsayisi];
       printf("111 %d 111",harfsayisi);
       
-        for(int i=0;i<harfsayisi+1;i++) // koordinatlar üzerinde harfleri yazdırıyor
-{
+  
+   for(int i=0;i<harfsayisi+1;i++) // koordinatlar üzerinde harfleri yazdırıyor
+   {
          
          setcolor(WHITE);
               
@@ -282,7 +283,8 @@ Büyük bir arazi içerisinde bulunan tarlaların sulanmasında kullanılacak su
               sprintf(dnokta,"%c",harfler[i]);
               outtextxy(dizix[i],diziy[i],dnokta); 
 
-}
+   }
+
 
       fclose(dosya);
  
