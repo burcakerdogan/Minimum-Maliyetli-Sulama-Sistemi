@@ -5,32 +5,37 @@ Büyük bir arazi içerisinde bulunan tarlaların sulanmasında kullanılacak su
 ================================
 
  
- #include<stdio.h>
- #include<conio.h>
- #include<stdlib.h>
- #include<time.h>
+ #include <<stdio.h>stdio.h>
+ 
+ #include <<conio.h>conio.h>
+ 
+ #include <<stdlib.h>stdlib.h>
+ 
+ #include <<time.h>time.h>
+ 
  /*-lbgi
  -lgdi32
  -lcomdlg32
  -luuid
  -loleaut32
  -lole32 */
+ 
+ #include<<graphics.h>graphics.h>
 
-#include<graphics.h>
-
-int dizix[50],diziy[50];
+ int dizix[50],diziy[50];
+ 
  int harita()
     {
           
-    dizix[0]=50;     diziy[0]=50;
+    dizix[0]=50;      diziy[0]=50;
     dizix[1]=150;     diziy[1]=75;
-    dizix[2]=250;    diziy[2]=120;
-    dizix[3]=350;    diziy[3]=50;
-    dizix[4]=450;    diziy[4]=270;
-    dizix[5]=550;    diziy[5]=130;
-    dizix[6]=650;    diziy[6]=50;
-    dizix[7]=750;    diziy[7]=75;
-    dizix[8]=50;    diziy[8]=125;
+    dizix[2]=250;     diziy[2]=120;
+    dizix[3]=350;     diziy[3]=50;
+    dizix[4]=450;     diziy[4]=270;
+    dizix[5]=550;     diziy[5]=130;
+    dizix[6]=650;     diziy[6]=50;
+    dizix[7]=750;     diziy[7]=75;
+    dizix[8]=50;      diziy[8]=125;
     dizix[9]=150;     diziy[9]=150;
     dizix[10]=250;    diziy[10]=175;
     dizix[11]=350;    diziy[11]=125;
@@ -38,7 +43,7 @@ int dizix[50],diziy[50];
     dizix[13]=550;    diziy[13]=175;
     dizix[14]=650;    diziy[14]=125;
     dizix[15]=750;    diziy[15]=150;
-    dizix[16]=50;    diziy[16]=250;
+    dizix[16]=50;     diziy[16]=250;
     dizix[17]=150;    diziy[17]=300;
     dizix[18]=250;    diziy[18]=250;
     dizix[19]=350;    diziy[19]=300;
@@ -46,7 +51,7 @@ int dizix[50],diziy[50];
     dizix[21]=550;    diziy[21]=300;
     dizix[22]=650;    diziy[22]=250;
     dizix[23]=750;    diziy[23]=300;
-    dizix[24]=50;    diziy[24]=350;
+    dizix[24]=50;     diziy[24]=350;
     dizix[25]=150;    diziy[25]=400;
     dizix[26]=250;    diziy[26]=350;
     dizix[27]=300;    diziy[27]=400;
@@ -70,10 +75,12 @@ int dizix[50],diziy[50];
     dizix[45]=550;    diziy[45]=600;
     dizix[46]=650;    diziy[46]=550;
     dizix[47]=750;    diziy[47]=600;
- 
     
-}/*
-int uc()
+   }
+   
+   /*
+   
+   int uc()
     {
         
         srand(time(NULL));
@@ -96,10 +103,12 @@ int uc()
     
     }
     
-} */
+}
+*/
 
-int main()
-{
+ int main()
+ {
+ 
     harita();
     char harfler[50]; 
     initwindow(850,800); 
@@ -263,11 +272,15 @@ int main()
       
         for(int i=0;i<harfsayisi+1;i++) // koordinatlar üzerinde harfleri yazdırıyor
 {
+         
          setcolor(WHITE);
+              
               readimagefile("siyah.jpg",dizix[i],diziy[i],dizix[i]+5,diziy[i]+5);
-             char dnokta[30];
-             sprintf(dnokta,"%c",harfler[i]);
-             outtextxy(dizix[i],diziy[i],dnokta); 
+             
+              char dnokta[30];
+             
+              sprintf(dnokta,"%c",harfler[i]);
+              outtextxy(dizix[i],diziy[i],dnokta); 
 
 }
 
