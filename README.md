@@ -1,19 +1,20 @@
 Minimum-Maliyetli-Sulama-Sistemi
 ================================
 
-Büyük bir arazi içerisinde bulunan tarlaların sulanması için kullanılacak sulama kanallarının minimum maliyetinin hesaplanması.
+Büyük bir arazi içerisinde bulunan tarlaların sulanmasında kullanılacak sulama kanallarının minimum maliyetinin hesaplanması.
 ================================
 
-#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<time.h>
-/*-lbgi
--lgdi32
--lcomdlg32
--luuid
--loleaut32
--lole32 */
+ 
+ #include<stdio.h>
+ #include<conio.h>
+ #include<stdlib.h>
+ #include<time.h>
+ /*-lbgi
+ -lgdi32
+ -lcomdlg32
+ -luuid
+ -loleaut32
+ -lole32 */
 
 #include<graphics.h>
 
